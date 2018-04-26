@@ -18,8 +18,8 @@ app.use(bodyParser.json());
 
 //app.use(bodyParser.text({type: ' text/html'}))
 
-require("/Users/daniellepabon/bootcamp/FriendFinder/app/routing/api-routes.js")(app);
-require("/Users/daniellepabon/bootcamp/FriendFinder/app/routing/html-routes.js")(app);
+require("./app/routing/api-routes.js")(app);
+require("./app/routing/html-routes.js")(app);
 
 app.listen(PORT, function(){
     console.log("App listening on PORT: " + PORT);
